@@ -75,7 +75,6 @@ public class PopMySoftKeyBoard implements View.OnClickListener {
 
     public PopMySoftKeyBoard(Context context) {
         this.context = context;
-        integerList = new ArrayList<>();
         pressedList = new ArrayList<>();
     }
 
@@ -122,6 +121,8 @@ public class PopMySoftKeyBoard implements View.OnClickListener {
         keyEight = (TextView) view.findViewById(R.id.key_eight);
         keyNine = (TextView) view.findViewById(R.id.key_nine);
         keyTen = (TextView) view.findViewById(R.id.key_ten);
+
+        integerList = new ArrayList<>();
 
         keyDelete = (TextView) view.findViewById(R.id.key_delete);
         keyClear = (TextView) view.findViewById(R.id.key_clear);
