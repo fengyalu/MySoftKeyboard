@@ -111,8 +111,8 @@ public class MySoftKeyboardEditext extends RelativeLayout implements IKeyNumberB
                     numberFour.setText(pressedList.get(3));
                     numberFive.setText(pressedList.get(4));
                     numberSix.setText(pressedList.get(5));
-                    StringBuilder builder=new StringBuilder();
-                     password = builder.append(pressedList.get(0)).append(pressedList.get(1)).append(pressedList.get(2)).
+                    StringBuilder builder = new StringBuilder();
+                    password = builder.append(pressedList.get(0)).append(pressedList.get(1)).append(pressedList.get(2)).
                             append(pressedList.get(3)).append(pressedList.get(4)).append(pressedList.get(5)).toString();
                     break;
 
@@ -123,8 +123,13 @@ public class MySoftKeyboardEditext extends RelativeLayout implements IKeyNumberB
         }
     }
 
+    /**
+     * 获取填写完毕的密码
+     *
+     * @return
+     */
     public String getPassword() {
-        if (password.length()==6){
+        if (null != password && password.length() == 6) {
             return password;
         }
         return null;

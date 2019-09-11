@@ -13,6 +13,9 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+
+        //获取密码
+        String password = softKeyboardEditext.getPassword();
     }
 
     private void initView() {

@@ -10,7 +10,7 @@
         android:background="#E8EEF3"/>
     <LinearLayout
         android:id="@+id/ll_number_edit"
-        android:layout_below="@+id/top_side_line"
+        android:layout_below="@id/top_side_line"
         android:layout_width="match_parent"
         android:layout_height="53dp"
         android:background="#E8EEF3"
@@ -90,7 +90,7 @@
             android:gravity="center"/>
     </LinearLayout>
     <View
-        android:layout_below="@+id/ll_number_edit"
+        android:layout_below="@id/ll_number_edit"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#E8EEF3"/>
